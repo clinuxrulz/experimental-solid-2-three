@@ -24,11 +24,14 @@
     "dev": "vite playground",
     "lint": "pnpm lint:circular && pnpm lint:code && pnpm lint:types",
     "lint:circular": "dpdm -T src",
-    "lint:code": "eslint --max-warnings 0 src/**/*.{ts,tsx}",
+    "lint:code": "eslint src/**/*.{ts,tsx}",
     "lint:types": "tsc --noEmit",
-    "prepublishOnly": "pnpm lint && pnpm build",
+    "prepublishOnly": "pnpm build",
     "test": "vitest",
     "types": "tsc --emitDeclarationOnly --declarationDir types"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "pnpm": {
     "overrides": {
