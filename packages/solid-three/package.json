@@ -1,6 +1,6 @@
 {
   "name": "@random-mesh/experimental-solid-2-three",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "SolidJS bindings for ThreeJS",
   "repository": {
     "type": "git",
@@ -80,7 +80,6 @@
     }
   },
   "dependencies": {
-    "@solidjs/web": "2.0.0-beta.4",
     "debounce": "^2.1.0"
   },
   "devDependencies": {
@@ -120,6 +119,7 @@
   "peerDependencies": {
     "@types/three": "*",
     "solid-js": "2.0.0-beta.4",
+    "@solidjs/web": "2.0.0-beta.4",
     "three": "*"
   },
   "jest": {
